@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="400dp"
+             android:layout_height="wrap_content"
+             tools:context=".AddMovieFragment">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content" android:gravity="center" android:layout_margin="5dp">
+        <TextView
+                android:text="Add Movie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textViewAddMovie" android:textAlignment="center"
+                android:textSize="24sp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:weightSum="2">
+            <TextView
+                    android:text="Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textViewTitle" android:layout_weight="1"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editTextTitle" android:layout_weight="1" android:text="New Movie TItle"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="2">
+            <TextView
+                    android:text="Genre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textViewGenre" android:layout_weight="1"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="New Movie Genre"
+                    android:ems="10"
+                    android:id="@+id/editTextGenre" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:weightSum="2">
+            <TextView
+                    android:text="Director"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textViewDirector" android:layout_weight="1"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="New Movie Director"
+                    android:ems="10"
+                    android:id="@+id/editTextDirectr" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="0" android:weightSum="2">
+            <TextView
+                    android:text="Year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/textViewYear" android:layout_weight="1"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/editTextYear" android:layout_weight="1" android:text="2020"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="0" android:weightSum="2">
+            <TextView
+                android:text="Replays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textViewReplays" android:layout_weight="1"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editTextReplays" android:layout_weight="1" android:text="0"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="0" android:weightSum="2">
+            <TextView
+                android:text="Revenue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textViewRevenue" android:layout_weight="1"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editTextRevenue" android:layout_weight="1" android:text="0"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="0" android:weightSum="2">
+            <Button
+                android:text="Save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/buttonSave"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toStartOf="@+id/buttonBack"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView"/>
+            <Button
+                android:text="Back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/buttonBack"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
